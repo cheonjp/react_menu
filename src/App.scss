@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    box-sizing: border-box;
+}
+h1 {
+    color: #517dc2;
+    text-align: center;
+}
+.line {
+    width: 130px;
+    height: 4px;
+    background: #8facda;
+    transform: translateY(-10px);
+    display: block;
+    margin: auto;
+    
+}
+.container {
+    width: 100%;
+    min-width:500px;
+    max-width:700px;
+    .contentBox{
+        width:60%;
+    }
+    .titleBox{
+        position:relative;
+        width:100%;
+        padding: 0 0 0 10px;
+        display:flex;
+        justify-content: space-between;
+
+    }
+    .menuItem{
+        margin-bottom: 20px;
+        width:100%;
+        padding:15px;
+        display:flex;
+        background-color:#b0c7ec;
+    }
+    img{
+        width:40%;
+        height:145px;
+        object-fit: cover;
+        border: 3px solid white;
+    }
+    .price{
+        width:20%;
+        text-align: right;
+        background-color:#b0c7ec;
+    }
+    .priceLine{
+        position:absolute;
+        top:12px;
+        z-index:0;
+        width:calc(100% - 10px);
+        height:1px;
+        border-top: 2px dotted #24457a;
+    }
+    .priceBox{
+        text-align: right;
+    }
+    .title,.priceBox{
+        font-size:1.1rem;
+        background:#b0c7ec;
+        z-index:1;
+    }
+    .title{
+        color:#24457a;
+        font-weight: 600;
+        padding-right:10px;
+    }
+    .priceBox{
+        font-weight: bold;
+        padding-left:10px;
+        color:#24457a;
+        
+    }
+    p{
+        padding-left:10px;
+    }
+}
+.btn{
+    padding:5px 15px;;
+    border:none;
+    background-color:#517dc2;
+    color:white;
+    font-size:17px;
+    border-radius: 3px;
+}
+.btnBox{
+    display:flex;
+    justify-content:space-evenly;
+    margin: 20px 0;
+}
